@@ -1,0 +1,888 @@
+/*HOME*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{ 
+    background-image: url(img/fondo2.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0px auto;
+}
+br{
+    clear: both;
+}
+/*header*/
+#header{
+    display:grid;
+    cursor: pointer;
+    grid-gap: 10px;
+    padding: 2px;
+    align-items: stretch;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: gray;
+}
+
+#logo img{
+    float: left;
+    width: 65px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: left;
+    cursor: pointer;
+    transition: all 500ms;
+}   
+#logo img:hover{
+    transform: scale(1.1, 1.1);}
+
+#logo h3{
+    float: left;
+    width: 310px;
+    background-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color:rgb(78, 78, 78);
+    margin-left: 8px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/*menú*/
+#menu{
+    display: flex;
+    height: 70px;
+    background: transparent;
+}
+
+#menu ul li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 21px;
+    display: inline-block;
+    margin: 10px;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+
+#menu ul li a{
+    display: flex;
+    text-decoration: none;
+    color: gray;
+    transition: all 200ms;
+}
+
+#menu ul li a:hover{
+    color: rgb(151, 14, 14);
+    }
+
+/*VIDEO pantalla principal*/
+#videoPrincipal video{
+    width: 100%;
+}
+/*fin del VIDEO de la pantalla principal*/
+
+/*inicio-FOOTER*/
+#footer{
+    height: 200px;
+    width: 100%;
+    margin-top: -5px;
+    background-color: black; 
+    display: inline-block;
+}
+
+#footer #redesSociales{
+    cursor: pointer;
+    /*float: none;*/
+    height: 40px;
+    letter-spacing: 3px;  
+    text-align: center;
+    font-family:monospace;
+    font-size: 30px ;
+    line-height: 55px;
+    color:rgb(14, 112, 151);
+    transition: all 500ms;
+}
+
+
+#footer #redesSociales:hover{
+    color: rgb(54, 11, 153);
+}
+
+#footer #redesSociales div{
+
+        display: inline-block;
+        height: 70px;
+        background: transparent;
+    }
+
+#footer #redesSociales div a{
+    text-decoration: none;
+}
+
+
+#facebook img{
+    float: left;
+    width: 65px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: left;
+    cursor: pointer;
+    transition: all 500ms;
+}   
+#facebook img:hover{
+    transform: scale(1.1, 1.1);}
+
+#whatsapp img{
+        float: left;
+        width: 95px;
+        height: 65px;
+        text-align: center;
+        margin-top: 5px;
+        margin-left: 0px;
+        margin-right: 10px;
+        margin: left;
+        cursor: pointer;
+        transition: all 500ms;
+    }   
+#whatsapp img:hover{
+        transform: scale(1.1, 1.1);
+    }
+
+#instagram img{
+        float: left;
+        width: 65px;
+        text-align: center;
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 5px;
+        margin: left;
+        cursor: pointer;
+        transition: all 500ms;
+    }   
+#instagram img:hover{
+        transform: scale(1.1, 1.1);}
+/*fin-footer*/
+
+
+/*Fin-HOME*/
+
+
+/*Inicio-SERVICIOS*/
+#fondoServicios{
+    background-image: url(img/fondoServicios.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+table{
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    border: 1px solid #a1a1a1;
+    box-shadow: 1px 2px 0px 2px gray;
+    height: 505px;
+    font-family:'bebas neue ', cursive;
+    padding: 0px;
+    margin-left: 70px;
+}
+
+table tr td h3{
+    cursor: pointer;
+    color: rgb(216, 98, 98);
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    transition: all 200ms;
+}
+table tr td h3:hover{
+    color: rgb(141, 40, 40);
+}
+
+table tr td ul{
+    margin-top: 2px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+table tr :nth-child(2){
+    letter-spacing: 0px;
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-transform:none;
+}
+
+table tr td ol{
+    margin-top: 2px;
+    text-align: left;
+    margin-left: 40px;
+}
+table tr td{
+    font-style: italic;
+    font-weight:normal;
+    font-size: 21px;
+    color: rgb(173, 57, 57);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+table tr td ul li{
+    list-style-type:circle;
+}
+ table tr td ol li{
+     list-style:circle;
+ }
+/*fin-SERVICIOS*/
+
+/*inicio-INSUMOS INFORMATICOS*/
+#insumos{
+    display:flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#insumos #sillasInsumos{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#insumos #sillasInsumos p{
+    justify-content: center;
+    margin-right: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+#insumos #sillasInsumos img{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -40px;
+    margin-block-end: 12px;
+    width: 200px;
+    height: 350px;
+    margin-right: 10px;
+    transition: all 200ms;
+}
+
+#insumos #sillasInsumos img:hover{
+    transform: scale(1.1, 1.1);}
+    
+#insumos #pcInsumos{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#insumos #pcInsumos p{
+        margin-right: 70px;
+        /*float: left;*/
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    
+
+#insumos #pcInsumos img{
+    display: flex;
+        margin-top: -10px;
+        margin-block-end: 20px;
+       /* float:inline-start;*/
+        width: 200px;
+        height: 250px;
+        transition: all 200ms;
+    }
+#insumos #pcInsumos img:hover{
+        transform: scale(1.1, 1.1);}
+    
+#insumos #tecladosInsumos{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#insumos #tecladosInsumos p{
+    align-items: flex-start;
+    margin-right: 40px;
+   /* float: left;*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#insumos #tecladosInsumos img{
+    display: flex;
+    align-items: flex-end;
+    margin-top: -30px;
+    margin-block-end: 20px;
+   /* float:inline-start;*/
+    width: 200px;
+    height: 350px;
+    margin-right: 10px;
+    transition: all 200ms;
+}
+
+#insumos #tecladosInsumos img:hover{
+    transform: scale(1.1, 1.1);}
+
+#insumos #monitor{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#insumos #monitorInsumos p{
+    justify-content: center;
+    margin-right: 110px;
+    float: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#insumos #monitorInsumos img{
+    justify-content: center;
+    margin-top: -10px;
+    margin-block-end: 20px;
+    float:inline-start;
+    width: 200px;
+    height: 350px;
+    margin-right: 10px;
+    transition: all 200ms;
+}
+
+#insumos #monitorInsumos img:hover{
+    transform: scale(1.1, 1.1);}
+/*fin-INSUMOS INFORMATICOS*/
+
+
+/*inicio-CONTACTO*/
+.formulario{
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    width: 900px;
+    height: 420px;
+    margin: 0px auto;
+    border-radius: 20px;
+    border: 2px solid rgb(128, 124, 124);
+    padding: 50px;
+    background-image: linear-gradient(to left, rgb(179, 2, 2), rgb(77, 58, 146));   
+    transition: all 800ms;
+}
+.formulario:hover{
+    transform: scale(1.1,1);
+}
+
+.formulario p{
+    margin-top: -30px;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.formulario input{
+    display: inline-block;
+    height: 20px;
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formulario .nombreFormulario{
+    font-size: 20px;
+    margin-left: 8px;
+    padding: 5px;
+}
+.formulario .apellidoFormulario{
+    font-size: 20px;
+    padding: 5px;
+}
+.formulario .meilFormulario{
+    font-size: 20px;
+    margin-left: 27px;
+    padding: 5px;
+}
+
+.formulario #estadoCivil{
+    width: 130px;
+    height: 40px;
+    font-size: 22px ;
+    letter-spacing: 1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.formulario .chekbox{
+    position: absolute;
+    top:104px;
+    left:750px;
+    width: 200px;
+    height: 40px;
+    transition: all 200ms;
+}
+.formulario .chekbox:hover{
+    transform: rotate(360deg);
+}
+
+.formulario #textarea{
+    font-size: 20px;
+    padding: 5px;
+    height: 80px;
+    width: 740px;
+}
+/*fin-CONTACTO*/
+/*SUBMENÚ*/
+#menu > ul > li > ul{
+    background: rgb(204, 204, 204);
+    display:none;
+    position: absolute;
+    text-align: left;
+    width:102px;
+    box-shadow: 0px 2px 2px rgb(100, 100, 100);
+    z-index: 1;
+}
+
+#menu > ul > li:hover > ul{
+    display: block;
+    border: 1px rgb(88, 88, 88);
+    text-align: center;
+    margin-top: -19px;
+    margin-left: -10px;
+}
+
+#menu > ul > li:hover > ul > li{
+    background-color:transparent;
+    border-bottom: 1px solid white;
+    padding: 0px;
+    line-height: 25px;
+    font-size: 13px;
+    
+}
+#nav > ul > li:hover > ul > li a{
+    color:gray;
+}
+
+/*seccion ELECTRODOMESTICOS*/
+.tituloElectrodomesticos{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color: rgb(141, 40, 40);
+    margin: 10px;
+    padding: 10px;
+    transition: all 200ms;
+    animation-name:desplazamiento;
+    animation-duration: 10s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes desplazamiento {
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: 900px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+.tituloElectrodomesticos:hover{
+    color: #a1a1a1;
+}
+
+.clearfix{
+    clear: both;
+}
+.cajaElectrodomesticos{
+    display:grid;
+    cursor: pointer;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5,20%);
+    padding: 10px;
+    align-items: stretch;
+    /*margin-top: 20px;
+    margin-bottom: 20px;*/
+     /*flex-wrap: wrap;*/
+}
+.caja1 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja2 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja3 img{ 
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja4 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja5 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja6 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja7 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja8 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja9 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja10 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja11 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja12 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+/*RESPONSIVE*/
+/*Mobile first(1024px,768px,600px)*/
+@media (max-width:1024px){
+    .wrap{
+        width:1024px;
+        margin: 0px auto;
+    }
+    #header{
+        align-items: stretch;
+        width: 100%;
+        height: 60px;
+        background-color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: gray;
+    }
+
+    #logo img{
+        float: left;
+        width: 50px;
+        text-align: center;
+        margin-top: 1px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin: left;
+        cursor: pointer;
+    }
+    
+    #logo h3{
+        float: left;
+        width: 170px;
+        background-color: transparent;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 25px;
+        margin-left: -3px;
+        color:rgb(78, 78, 78);
+        letter-spacing: 1px;
+        margin-top: -2px;
+    }
+
+    #menu{
+        display: grid;
+        background: transparent;
+        margin-left: 80px;
+    }
+    
+    #menu ul li{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        display: inline-block;
+        margin: 6px;
+        letter-spacing: 1px;
+        line-height: 70px;
+    }
+    
+    #menu ul li a{
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        color: gray;
+        transition: all 200ms;
+    }
+    #menu ul li a:hover{
+        color: rgb(151, 14, 14);
+    } 
+
+    #videoPrincipal video{
+        width: 100%;
+    }
+
+    #footer{
+        height: 260px;
+        width: 100%;
+        margin-top: -5px;
+        background-color: black; 
+        display: inline-block;
+    }
+    
+    #footer #redesSociales{
+        cursor: pointer;
+        height: 40px;
+        letter-spacing: 3px;
+        margin-left: 10px;  
+        text-align: center;
+        font-family:monospace;
+        font-size: 25px ;
+        line-height: 55px;
+        color:rgb(14, 112, 151);
+        transition: all 500ms;
+    }
+}
+
+
+@media (max-width:768px){
+    #header{
+        align-items: stretch;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: gray;
+    }
+
+    #logo img{
+        float: left;
+        width: 30px;
+        text-align: center;
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin: left;
+        cursor: pointer;
+    }
+    
+    #logo h3{
+        float: left;
+        width: 130px;
+        background-color: transparent;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        color:rgb(78, 78, 78);
+        margin-top: -1px;
+        margin-left: 2px;
+        letter-spacing: 1px;
+    }
+
+    #menu{
+        display: grid;
+        height: 10px;
+        background: transparent;
+        margin-left: 80px;
+    }
+    
+    #menu ul li{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 15px;
+        display: inline-block;
+        margin: 0px 2px 0px 2px;
+        letter-spacing: 1px;
+        line-height: 70px;
+    }
+    
+    #menu ul li a{
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        color: gray;
+        transition: all 200ms;
+    }
+    #menu ul li a:hover{
+        color: rgb(151, 14, 14);
+    } 
+
+    .wrap{
+        width:768px;
+        margin: 0px auto;
+    }
+
+    #videoPrincipal video{
+        width: 100%;
+    }
+
+    #footer{
+        height: 298px;
+        width: 100%;
+        margin-top: -5px;
+        background-color: black; 
+        display: inline-block;
+    }
+    
+    #footer #redesSociales{
+        cursor: pointer;
+        height: 40px;
+        letter-spacing: 3px; 
+        margin-left: 45px; 
+        text-align: center;
+        font-family:monospace;
+        font-size: 20px ;
+        line-height: 55px;
+        color:rgb(14, 112, 151);
+        transition: all 500ms;
+    }
+}
+
+
+@media (max-width:600px){
+    #header{ 
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+        height: 40px;
+        background-color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: gray;
+    }
+
+    #logo img{
+        float: left;
+        width: 30px;
+        text-align: center;
+        margin-top: 2px;
+        margin: left;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    
+    #logo h3{
+        float: left;
+        width: 0px;
+        background-color: transparent;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 12px;
+        color:rgb(78, 78, 78);
+        margin-top: 3px;
+        margin-left: 2px;
+    }
+
+    #menu{
+        display: flex;
+        height: 20px;
+        background: transparent;
+        margin-left: 106px;
+    }
+    
+    #menu ul li{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 12px;
+        display: inline-block;
+        margin-top: -11px; 
+    }
+    
+    #menu ul li a{
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+        color: gray;
+        transition: all 200ms;
+    }
+    #menu ul li a:hover{
+        color: rgb(151, 14, 14);
+    } 
+
+    .wrap{
+        width:600px;
+        margin: 0px auto;
+    }
+
+    #videoPrincipal video{
+        width: 100%;
+    }
+
+    #footer{
+        height: 390px;
+        width: 100%;
+        margin-top: -5px;
+        background-color: black; 
+        display: inline-block;
+    }
+    
+    #footer #redesSociales{
+        cursor: pointer;
+        height: 40px;
+        letter-spacing: 3px;  
+        text-align: center;
+        font-family:monospace;
+        font-size: 30px ;
+        line-height: 55px;
+        color:rgb(14, 112, 151);
+        transition: all 500ms;
+    }
+
+    
+}
+/*fin del MOBILE-FIRST*/ 
+h5{
+    color: yellow;
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

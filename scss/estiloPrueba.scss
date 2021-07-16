@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F6F6FE;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.contenedor {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    margin-top: 30px;
+    background: #FFF;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+.card__thumbnail {
+    width: 650px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+}
+.card__img{
+    width: 340px;
+    height: 100%;
+}
+.card__titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.card__enlase{
+    color: black;
+}
+.card__extracto{
+    line-height: 28px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.boton{
+    border: none;
+    min-width: 180px;
+    height: 50px;
+    padding: 0 60px;
+    background: black;
+    color:white;
+    display: inline-block;
+    border-radius: 100px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(138, 37, 37);
+    transition: 200ms;
+}
+
+.boton:hover {
+    background: red;
+    text-decoration: none;
+}
+
+.boton--absolute{
+    position: absolute;
+    right: 20px;
+    bottom: -25px;
+
+}
+
+.clearfix{
+    clear:both;
+}
+
+//VARIABLES & OPERADORES
+$fuente-tipica: sans-serif, Helvetica, Arial;
+$color-fondo: rgb(255, 255, 255);
+$color-letra:gray;
+$color-tarjeta: #fff ;
+
+
+.tarjeta {
+    background: $color-fondo ;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+.tarjeta__thumbnail {
+    width: 325px * 2; 
+    height: 200px;
+    margin-right: 20px;
+    //border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.tarjeta__titulo{
+    font-family:$fuente-tipica;
+    font-size: 20px + 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.tarjeta__enlase{
+    color: gray;
+}
+.tarjeta__extracto{
+    line-height: 28px;
+    color: $color-letra;
+    margin-bottom: 20px;
+}
+
+//MIXIN & FUNCIONES
+@mixin crearBordes {
+    border: 1px solid rgb(255, 162, 162) ;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px $color-fondo;
+}
+
+.boton{
+    @include crearBordes();
+}
+
+.tarjeta{
+    @extend .tarjeta__enlase;
+    background: $color-tarjeta;
+}
