@@ -96,7 +96,7 @@ br{
     height: 200px;
     width: 100%;
     margin-top: -5px;
-    background-color: black; 
+    background-color: rgb(34, 34, 34); 
     display: inline-block;
 }
 
@@ -173,6 +173,17 @@ br{
     }   
 #instagram img:hover{
         transform: scale(1.1, 1.1);}
+
+#footerPrincipal{
+    width: 100%;
+    height: 40px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+    color: white;
+   padding-top: 8px;
+   font-size: 20px;
+}
 /*fin-footer*/
 
 
