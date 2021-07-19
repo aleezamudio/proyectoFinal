@@ -8,7 +8,6 @@ body{
     background-image: url(img/imagenFondoBlanco2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-
 }
 
 .wrap{
@@ -210,7 +209,10 @@ table{
     padding: 0px;
     margin-left: 70px;
 }
-
+table tr td a{
+    text-decoration: none;
+    color: teal;
+}
 table tr td h3{
     cursor: pointer;
     color: rgb(216, 98, 98);
@@ -219,25 +221,25 @@ table tr td h3{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 1px;
     transition: all 200ms;
+
 }
 table tr td h3:hover{
     color: rgb(141, 40, 40);
 }
-
 table tr td ul{
     margin-top: 2px;
     text-align: left;
     margin-left: 40px;
+    
 }
-
 table tr :nth-child(2){
     letter-spacing: 0px;
     margin-left: 0px;
     margin-top: 5px;
     margin-right: 5px;
     text-transform:none;
+   
 }
-
 table tr td ol{
     margin-top: 2px;
     text-align: left;
@@ -247,11 +249,10 @@ table tr td{
     font-style: italic;
     font-weight:normal;
     font-size: 21px;
-    color: rgb(173, 57, 57);
+    color: rgb(0, 0, 0);
     letter-spacing: 1px;
     text-align: center;
 }
-
 table tr td ul li{
     list-style-type:circle;
 }
@@ -408,12 +409,7 @@ table tr td ul li{
     border: 2px solid rgb(128, 124, 124);
     padding: 50px;
     background-image: linear-gradient(to left, rgb(179, 2, 2), rgb(77, 58, 146));   
-    transition: all 800ms;
 }
-.formulario:hover{
-    transform: scale(1.1,1);
-}
-
 .formulario p{
     margin-top: -30px;
     font-size: 50px;
@@ -458,10 +454,6 @@ table tr td ul li{
     left:750px;
     width: 200px;
     height: 40px;
-    transition: all 200ms;
-}
-.formulario .chekbox:hover{
-    transform: rotate(360deg);
 }
 
 .formulario #textarea{
@@ -690,10 +682,11 @@ table tr td ul li{
     }
 
     #footer{
-        height: 260px;
+        height: 100% auto;
+      /*  height: 260px;*/
         width: 100%;
-        margin-top: -5px;
-        background-color: black; 
+        margin-bottom: 30px;
+        background-color:rgb(34, 34, 34); 
         display: inline-block;
     }
     
@@ -709,9 +702,202 @@ table tr td ul li{
         color:rgb(14, 112, 151);
         transition: all 500ms;
     }
+    /*seccion-ELECTRODOMESTICOS*/
+    .tituloElectrodomesticos{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 25px;
+        color: rgb(141, 40, 40);
+        margin: 10px;
+        transition: all 200ms;
+        animation-name:desplazamiento;
+        animation-duration: 10s ;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes desplazamiento {
+        0%{
+            margin-left: 0px;
+        }
+        50%{
+            margin-left: 512px;
+        }
+        100%{
+            margin-left: 0px;
+        }
+    }
+    
+    .tituloElectrodomesticos:hover{
+        color: #a1a1a1;
+    }
+    
+    .clearfix{
+        clear: both;
+    }
+    .cajaElectrodomesticos{
+       display: grid;
+       display: inline-flexbox;
+        cursor: pointer;
+        grid-gap: 0px;
+        grid-template-columns: repeat(5,20%);
+        align-items: stretch;
+    }
+    .caja1 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja2 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja3 img{ 
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja4 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja5 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja6 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja7 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja8 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja9 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja10 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja11 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja12 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    body{ 
+        background-image: url(img/imagenFondoBlanco2.jpg);
+        background-repeat: repeat;
+        background-size: 100%;
+    }
+
+    #footerPrincipal{
+        width: 100%;
+        height: 40px;
+        margin: 0px auto;
+        text-align: center;
+        background-color: rgb(17, 17, 17);
+        color: white;
+        padding-top: 8px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        bottom: 0;
+        position: fixed;
+    }
+
+    /*seccion SERVICIOS*/
+    #fondoServicios{
+        background-image: url();
+    }
+    table{
+        margin-left: 0px;
+        cursor: pointer;
+        display: grid;
+        display: inline-flexbox;
+        width: 100%;
+        border: 1px solid #a1a1a1;
+        box-shadow: 1px 2px 0px 2px gray;
+        height: 100%;
+        font-family:'bebas neue ', cursive;
+    }
+    table tr td h3{
+        cursor: pointer;
+        color: rgb(216, 98, 98);
+        text-align: center;
+        font-size: 35px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        letter-spacing: 1px;
+        transition: all 200ms;
+    }
+    table tr td h3:hover{
+        color: rgb(141, 40, 40);
+    }
+    
+    table tr td ul{
+        margin-top: 2px;
+        text-align: left;
+        margin-left: 40px;
+    }
+    
+    table tr :nth-child(2){
+        letter-spacing: 0px;
+        margin-left: 0px;
+        margin-top: 5px;
+        margin-right: 5px;
+        text-transform:none;
+    }
+    
+    table tr td ol{
+        margin-top: 2px;
+        text-align: left;
+        margin-left: 25px;
+    }
+    table tr td{
+        font-style: italic;
+        font-weight:normal;
+        font-size: 21px;
+        color: rgb(173, 57, 57);
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    
+    table tr td ul li{
+        list-style-type:circle;
+    }
+     table tr td ol li{
+         list-style:circle;
+     }
+    /*fin-SERVICIOS*/
 }
-
-
 @media (max-width:768px){
     #header{
         align-items: stretch;
@@ -801,12 +987,271 @@ table tr td ul li{
         color:rgb(14, 112, 151);
         transition: all 500ms;
     }
+
+    /*seccion-ELECTRODOMESTICOS*/
+    .tituloElectrodomesticos{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        color: rgb(141, 40, 40);
+        margin: 10px;
+        transition: all 200ms;
+        animation-name:desplazamiento;
+        animation-duration: 10s ;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes desplazamiento {
+        0%{
+            margin-left: 0px;
+        }
+        50%{
+            margin-left: 400px;
+        }
+        100%{
+            margin-left: 0px;
+        }
+    }
+    
+    .tituloElectrodomesticos:hover{
+        color: #a1a1a1;
+    }
+    
+    .clearfix{
+        clear: both;
+    }
+    .cajaElectrodomesticos{
+       display: grid;
+       display: inline-flexbox;
+        cursor: pointer;
+        grid-gap: 0px;
+        grid-template-columns: repeat(3,33%);
+        align-items: stretch;
+    }
+    .caja1 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja2 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja3 img{ 
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja4 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja5 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja6 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja7 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja8 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja9 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja10 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja11 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja12 img{
+        width: 200px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    body{ 
+        background-image: url(img/imagenFondoBlanco2.jpg);
+        background-repeat: repeat;
+        background-size: 100%;
+    }
+
+    #footerPrincipal{
+        width: 100%;
+        height: 40px;
+        margin: 0px auto;
+        text-align: center;
+        background-color: rgb(17, 17, 17);
+        color: white;
+        padding-top: 8px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        bottom: 0;
+        position: fixed;
+    }
+
+    /*seccion SERVICIOS*/
+    #fondoServicios{
+        background-image: url();
+    }
+    table{
+        margin-left: 0px;
+        cursor: pointer;
+        display: grid;
+        display: inline-flexbox;
+        width: 768px;
+        border: 1px solid #a1a1a1;
+        box-shadow: 1px 2px 0px 2px gray;
+        height: 600px;
+        font-family:'bebas neue ', cursive;
+    }
+    table tr td h3{
+        cursor: pointer;
+        color: rgb(216, 98, 98);
+        text-align: center;
+        font-size: 19px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        letter-spacing: 1px;
+        transition: all 200ms;
+    }
+    table tr td h3:hover{
+        color: rgb(141, 40, 40);
+    }
+    
+    table tr td ul{
+        font-size: 19px;
+        margin-top: 1px;
+        text-align: left;
+        margin-left: 23px;
+    }
+    
+    table tr :nth-child(2){
+        letter-spacing: 0px;
+        margin-left: 0px;
+        margin-top: 5px;
+        margin-right: 5px;
+        text-transform:none;
+    }
+    
+    table tr td ol{
+        margin-top: 2px;
+        text-align: left;
+        margin-left: 25px;
+    }
+    table tr td{
+        font-style: italic;
+        font-weight:normal;
+        font-size: 19px;
+        color: rgb(173, 57, 57);
+        text-align: center;
+    }
+    
+    table tr td ul li{
+        list-style-type:circle;
+    }
+     table tr td ol li{
+         list-style:circle;
+     }
+    /*fin-SERVICIOS*/
+    /*inicio-CONTACTO*/
+.formulario{
+    cursor: pointer;
+    color: white;
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 668px;
+    height: 420px;
+    margin: 0px auto;
+    border: 2px solid rgb(128, 124, 124);
+    background-image: linear-gradient(to left, rgb(179, 2, 2), rgb(77, 58, 146));   
+}
+.formulario p{
+    margin-top: -45px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 
+.formulario input{
+    display: inline-block;
+    height: 20px;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
+.formulario .nombreFormulario{
+    font-size: 20px;
+    margin-left: 8px;
+    padding: 5px;
+}
+.formulario .apellidoFormulario{
+    font-size: 20px;
+    padding: 5px;
+}
+.formulario .meilFormulario{
+    font-size: 20px;
+    margin-left: 18px;
+    padding: 5px;
+}
+
+.formulario #estadoCivil{
+    width: 80px;
+    height: 40px;
+    font-size: 15px ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.formulario .chekbox{
+    position: absolute;
+    top:60px;
+    left:680px;
+    width: 40px;
+    height: 40px;
+}
+
+.formulario #textarea{
+    font-size: 20px;
+    padding: 5px;
+    height: 80px;
+    width: 585px;
+}
+/*fin-CONTACTO*/
+}
 @media (max-width:600px){
     #header{ 
         display: flex;
+        display: inline-flexbox;
         align-items: stretch;
         width: 100%;
         height: 40px;
@@ -816,31 +1261,32 @@ table tr td ul li{
     }
 
     #logo img{
-        float: left;
-        width: 30px;
+        /*float: left;*/
+        display: inline-flexbox;
+        width: 35px;
         text-align: center;
         margin-top: 2px;
         margin: left;
         cursor: pointer;
-        margin-left: 10px;
+        margin-left: 5px;
     }
     
     #logo h3{
-        float: left;
+        /*float: left;*/
+        display: inline-flexbox;
         width: 0px;
         background-color: transparent;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 12px;
         color:rgb(78, 78, 78);
-        margin-top: 3px;
-        margin-left: 2px;
+        margin-top: 3px; 
     }
 
     #menu{
         display: flex;
         height: 20px;
         background: transparent;
-        margin-left: 106px;
+        margin-left: 150px;
     }
     
     #menu ul li{
@@ -874,7 +1320,7 @@ table tr td ul li{
         height: 390px;
         width: 100%;
         margin-top: -5px;
-        background-color: black; 
+        background-color: rgb(34, 34, 34); 
         display: inline-block;
     }
     
@@ -889,7 +1335,265 @@ table tr td ul li{
         color:rgb(14, 112, 151);
         transition: all 500ms;
     }
+/*seccion-ELECTRODOMESTICOS*/
+.tituloElectrodomesticos{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    color: rgb(141, 40, 40);
+    margin: 10px;
+    transition: all 200ms;
+    animation-name:desplazamiento;
+    animation-duration: 10s ;
+    animation-iteration-count: infinite;
+}
 
+@keyframes desplazamiento {
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: 400px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+.tituloElectrodomesticos:hover{
+    color: #a1a1a1;
+}
+
+.clearfix{
+    clear: both;
+}
+.cajaElectrodomesticos{
+   display: grid;
+   display: inline-flexbox;
+    cursor: pointer;
+    grid-gap: 0px;
+    grid-template-columns: repeat(2,50%);
+    align-items: stretch;
+}
+.caja1 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja2 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja3 img{ 
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja4 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja5 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja6 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja7 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja8 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja9 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja10 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja11 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caja12 img{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+body{ 
+    background-image: url(img/imagenFondoBlanco2.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+#footerPrincipal{
+    width: 100%;
+    height: 40px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    padding-top: 8px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 0;
+    position: fixed;
+}
+
+/*seccion SERVICIOS*/
+#fondoServicios{
+    background-image: url();
+}
+table{
+    margin-left: 0px;
+    cursor: pointer;
+    display: grid;
+    display: inline-flexbox;
+    width: 600px;
+    border: 1px solid #a1a1a1;
+    box-shadow: 1px 2px 0px 2px gray;
+    height: 600px;
+    font-family:'bebas neue ', cursive;
+}
+table tr td h3{
+    cursor: pointer;
+    color: rgb(216, 98, 98);
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 200ms;
+}
+table tr td h3:hover{
+    color: rgb(141, 40, 40);
+}
+
+table tr td ul{
+    font-size: 14px;
+    margin-top: 1px;
+    text-align: left;
+    margin-left: 23px;
+}
+
+table tr :nth-child(2){
+    letter-spacing: 0px;
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-transform:none;
+}
+
+table tr td ol{
+    margin-top: 2px;
+    text-align: left;
+    margin-left: 25px;
+}
+table tr td{
+    font-style: italic;
+    font-weight:normal;
+    font-size: 14px;
+    color: rgb(173, 57, 57);
+    text-align: center;
+}
+
+table tr td ul li{
+    list-style-type:circle;
+}
+ table tr td ol li{
+     list-style:circle;
+ }
+/*fin-SERVICIOS*/
+/*inicio-CONTACTO*/
+.formulario{
+cursor: pointer;
+color: white;
+font-size: 14px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+width: 500px;
+height: 420px;
+margin: 0px auto;
+border: 2px solid rgb(128, 124, 124);
+background-image: linear-gradient(to left, rgb(179, 2, 2), rgb(77, 58, 146));   
+}
+
+.formulario p{
+margin-top: -45px;
+font-size: 40px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-align: center;
+}
+
+.formulario input{
+display: inline-block;
+height: 20px;
+width: 400px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.formulario .nombreFormulario{
+font-size: 20px;
+margin-left: 8px;
+padding: 5px;
+}
+.formulario .apellidoFormulario{
+font-size: 20px;
+padding: 5px;
+}
+.formulario .meilFormulario{
+font-size: 20px;
+margin-left: 15px;
+padding: 5px;
+}
+
+.formulario #estadoCivil{
+width: 80px;
+height: 40px;
+font-size: 15px ;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.formulario .chekbox{
+position: absolute;
+top:45px;
+left:550px;
+width: 35px;
+height: 35px;
+}
+
+.formulario #textarea{
+font-size: 20px;
+padding: 5px;
+height: 80px;
+width: 500px;
+}
+/*fin-CONTACTO*/
     
 }
 /*fin del MOBILE-FIRST*/ 
