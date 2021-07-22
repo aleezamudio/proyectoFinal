@@ -1,15 +1,13 @@
-/*HOME*/
+/*seccion HOME*/
 *{
     padding: 0px;
     margin: 0px;
 }
-
 body{ 
     background-image: url(img/imagenFondoBlanco2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
 .wrap{
     width: 1200px;
     margin: 0px auto;
@@ -30,7 +28,6 @@ br{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: gray;
 }
-
 #logo img{
     float: left;
     width: 65px;
@@ -56,14 +53,12 @@ br{
     letter-spacing: 1px;
     cursor: pointer;
 }
-
 /*menú*/
 #menu{
     display: flex;
     height: 70px;
     background: transparent;
 }
-
 #menu ul li{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 21px;
@@ -72,25 +67,24 @@ br{
     letter-spacing: 1px;
     line-height: 70px;
 }
-
 #menu ul li a{
     display: flex;
     text-decoration: none;
     color: gray;
     transition: all 200ms;
 }
-
 #menu ul li a:hover{
     color: rgb(151, 14, 14);
     }
 
-/*VIDEO pantalla principal*/
+/*VIDEO del HOME*/
 #videoPrincipal video{
     width: 100%;
 }
-/*fin del VIDEO de la pantalla principal*/
+/*fin del VIDEO de HOME*/
 
-/*inicio-FOOTER*/
+
+/*FOOTER del HOME*/
 #footer{
     height: 200px;
     width: 100%;
@@ -98,7 +92,6 @@ br{
     background-color: rgb(34, 34, 34); 
     display: inline-block;
 }
-
 #footer #redesSociales{
     cursor: pointer;
     /*float: none;*/
@@ -111,24 +104,18 @@ br{
     color:rgb(14, 112, 151);
     transition: all 500ms;
 }
-
-
 #footer #redesSociales:hover{
     color: rgb(54, 11, 153);
 }
-
 #footer #redesSociales div{
 
         display: inline-block;
         height: 70px;
         background: transparent;
-    }
-
+}
 #footer #redesSociales div a{
     text-decoration: none;
 }
-
-
 #facebook img{
     float: left;
     width: 65px;
@@ -184,19 +171,16 @@ br{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-/*fin-footer*/
-
-
+/*fin del FOOTER*/
 /*Fin-HOME*/
 
 
-/*Inicio-SERVICIOS*/
+/*seccion SERVICIOS*/
 #fondoServicios{
     background-image: url(img/fondoServicios.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
 table{
     cursor: pointer;
     display: flex;
@@ -261,7 +245,8 @@ table tr td ul li{
  }
 /*fin-SERVICIOS*/
 
-/*inicio-INSUMOS INFORMATICOS*/
+
+/*seccion-INSUMOS INFORMATICOS*/
 #insumos{
     display:flex;
     flex-wrap: wrap;
@@ -277,7 +262,6 @@ table tr td ul li{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 #insumos #sillasInsumos p{
     justify-content: center;
     margin-right: 20px;
@@ -285,7 +269,6 @@ table tr td ul li{
     font-size: 20px;
     letter-spacing: 1px;
 }
-
 #insumos #sillasInsumos img{
     display: flex;
     flex-wrap: wrap;
@@ -296,7 +279,6 @@ table tr td ul li{
     margin-right: 10px;
     transition: all 200ms;
 }
-
 #insumos #sillasInsumos img:hover{
     transform: scale(1.1, 1.1);}
     
@@ -395,7 +377,7 @@ table tr td ul li{
 /*fin-INSUMOS INFORMATICOS*/
 
 
-/*inicio-CONTACTO*/
+/*seccion-CONTACTO*/
 .formulario{
     cursor: pointer;
     color: white;
@@ -463,6 +445,8 @@ table tr td ul li{
     width: 740px;
 }
 /*fin-CONTACTO*/
+
+
 /*SUBMENÚ*/
 #menu > ul > li > ul{
     background: rgb(204, 204, 204);
@@ -493,6 +477,8 @@ table tr td ul li{
 #nav > ul > li:hover > ul > li a{
     color:gray;
 }
+/*fin subMENÚ*/
+
 
 /*seccion ELECTRODOMESTICOS*/
 .tituloElectrodomesticos{
@@ -1601,4 +1587,25 @@ h5{
     color: yellow;
     font-size: 80px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*PaginadeError*/
+.errorFondo{
+    background: rgb(241, 240, 240);
+}
+.error{
+    cursor: pointer;
+    color: rgb(87, 87, 87);
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+    width: 600px;
+    height: 420px;
+    margin: 15px auto;
+    border-radius: 20px;
+    padding: 50px;
+    background: rgb(255, 254, 254);
+}
+
+.error img{
+    margin-left: 200px;
 }
