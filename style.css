@@ -89,7 +89,7 @@ br{
     height: 200px;
     width: 100%;
     margin-top: -5px;
-    background-color: rgb(34, 34, 34); 
+    background-color: rgb(20, 20, 20); 
     display: inline-block;
 }
 #footer #redesSociales{
@@ -166,7 +166,7 @@ br{
     margin: 0px auto;
     text-align: center;
     background-color: rgb(17, 17, 17);
-    color: white;
+    color: rgb(189, 189, 189);
     padding-top: 8px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -177,13 +177,12 @@ br{
 
 /*seccion SERVICIOS*/
 #fondoServicios{
-    background-image: url(img/fondoServicios.jpeg);
+    background-image: url(img/fondoServicios2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 table{
     cursor: pointer;
-    display: flex;
     flex-wrap: wrap;
     width: 1200px;
     border: 1px solid #a1a1a1;
@@ -194,6 +193,8 @@ table{
     margin-left: 70px;
 }
 table tr td a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:900;
     text-decoration: none;
     color: teal;
 }
@@ -214,7 +215,6 @@ table tr td ul{
     margin-top: 2px;
     text-align: left;
     margin-left: 40px;
-    
 }
 table tr :nth-child(2){
     letter-spacing: 0px;
@@ -222,7 +222,6 @@ table tr :nth-child(2){
     margin-top: 5px;
     margin-right: 5px;
     text-transform:none;
-   
 }
 table tr td ol{
     margin-top: 2px;
@@ -230,12 +229,11 @@ table tr td ol{
     margin-left: 40px;
 }
 table tr td{
-    font-style: italic;
-    font-weight:normal;
     font-size: 21px;
     color: rgb(0, 0, 0);
     letter-spacing: 1px;
     text-align: center;
+    font-weight:900;
 }
 table tr td ul li{
     list-style-type:circle;
@@ -517,8 +515,9 @@ table tr td ul li{
     cursor: pointer;
     grid-gap: 10px;
     grid-template-columns: repeat(5,20%);
-    padding: 10px;
+    padding: 50px;
     align-items: stretch;
+    transition: all 3s;
     /*margin-top: 20px;
     margin-bottom: 20px;*/
      /*flex-wrap: wrap;*/
@@ -529,11 +528,34 @@ table tr td ul li{
     margin-left: 10px;
     margin-right: 10px;
 }
+.cajaElectrodomesticos .caja1:hover{
+    transform: scale(1.1,1.1);
+}
+.cajaElectrodomesticos p{
+    border-radius: 8px;
+    color: rgb(20, 20, 20);
+    background-color: rgb(224, 224, 224);
+    border: 1px solid gray;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    text-justify: initial;
+    transition: all 500ms;
+}
+.cajaElectrodomesticos p:hover{
+    background-color: rgb(151, 14, 14);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(197, 0, 0);
+}
 .caja2 img{
     width: 200px;
     height: 250px;
     margin-left: 10px;
     margin-right: 10px;
+}
+.cajaElectrodomesticos .caja2:hover{
+    transform: scale(1.1,1.1);
 }
 .caja3 img{ 
     width: 200px;
@@ -541,11 +563,17 @@ table tr td ul li{
     margin-left: 10px;
     margin-right: 10px;
 }
+.cajaElectrodomesticos .caja3:hover{
+    transform: scale(1.1,1.1);
+}
 .caja4 img{
     width: 200px;
     height: 250px;
     margin-left: 10px;
     margin-right: 10px;
+}
+.cajaElectrodomesticos .caja4:hover{
+    transform: scale(1.1,1.1);
 }
 .caja5 img{
     width: 200px;
@@ -553,11 +581,17 @@ table tr td ul li{
     margin-left: 10px;
     margin-right: 10px;
 }
+.cajaElectrodomesticos .caja5:hover{
+    transform: scale(1.1,1.1);
+}
 .caja6 img{
     width: 200px;
     height: 250px;
     margin-left: 10px;
     margin-right: 10px;
+}
+.cajaElectrodomesticos .caja6:hover{
+    transform: scale(1.1,1.1);
 }
 .caja7 img{
     width: 200px;
@@ -565,11 +599,17 @@ table tr td ul li{
     margin-left: 10px;
     margin-right: 10px;
 }
+.cajaElectrodomesticos .caja7:hover{
+    transform: scale(1.1,1.1);
+}
 .caja8 img{
     width: 200px;
     height: 250px;
     margin-left: 10px;
     margin-right: 10px;
+}
+.cajaElectrodomesticos .caja8:hover{
+    transform: scale(1.1,1.1);
 }
 .caja9 img{
     width: 200px;
@@ -577,11 +617,17 @@ table tr td ul li{
     margin-left: 10px;
     margin-right: 10px;
 }
+.cajaElectrodomesticos .caja9:hover{
+    transform: scale(1.1,1.1);
+}
 .caja10 img{
     width: 200px;
     height: 250px;
     margin-left: 10px;
     margin-right: 10px;
+}
+.cajaElectrodomesticos .caja10:hover{
+    transform: scale(1.1,1.1);
 }
 .caja11 img{
     width: 200px;
@@ -589,13 +635,18 @@ table tr td ul li{
     margin-left: 10px;
     margin-right: 10px;
 }
+.cajaElectrodomesticos .caja11:hover{
+    transform: scale(1.1,1.1);
+}
 .caja12 img{
     width: 200px;
     height: 250px;
     margin-left: 10px;
     margin-right: 10px;
 }
-
+.cajaElectrodomesticos .caja12:hover{
+    transform: scale(1.1,1.1);
+}
 
 
 /*RESPONSIVE*/
@@ -724,7 +775,7 @@ table tr td ul li{
        display: inline-flexbox;
         cursor: pointer;
         grid-gap: 0px;
-        grid-template-columns: repeat(5,20%);
+        grid-template-columns: repeat(4,25%);
         align-items: stretch;
     }
     .caja1 img{
@@ -822,7 +873,9 @@ table tr td ul li{
 
     /*seccion SERVICIOS*/
     #fondoServicios{
-        background-image: url();
+        background-image: url(img/fondoServicios2.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
     table{
         margin-left: 0px;
@@ -868,8 +921,10 @@ table tr td ul li{
         margin-left: 25px;
     }
     table tr td{
-        font-style: italic;
-        font-weight:normal;
+        /*font-style: italic;
+        font-weight:normal;*/
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight:900;
         font-size: 21px;
         color: rgb(173, 57, 57);
         letter-spacing: 1px;
@@ -1108,7 +1163,9 @@ table tr td ul li{
 
     /*seccion SERVICIOS*/
     #fondoServicios{
-        background-image: url();
+        background-image: url(img/fondoServicios2.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
     table{
         margin-left: 0px;
@@ -1155,8 +1212,8 @@ table tr td ul li{
         margin-left: 25px;
     }
     table tr td{
-        font-style: italic;
-        font-weight:normal;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight:900;
         font-size: 19px;
         color: rgb(173, 57, 57);
         text-align: center;
@@ -1455,8 +1512,11 @@ body{
 
 /*seccion SERVICIOS*/
 #fondoServicios{
-    background-image: url();
+    background-image: url(img/fondoServicios2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
+
 table{
     margin-left: 0px;
     cursor: pointer;
@@ -1501,8 +1561,8 @@ table tr td ol{
     margin-left: 25px;
 }
 table tr td{
-    font-style: italic;
-    font-weight:normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:900;
     font-size: 14px;
     color: rgb(173, 57, 57);
     text-align: center;
