@@ -12,74 +12,170 @@ body{
     width: 1200px;
     margin: 0px auto;
 }
-br{
-    clear: both;
-}
-/*header*/
-#header{
-    display:grid;
-    cursor: pointer;
-    grid-gap: 10px;
-    padding: 2px;
-    align-items: stretch;
+
+/*nav del menu*/
+.menu {
+    background-color: rgb(228, 227, 227);
+    height: 90px;
     width: 100%;
-    height: 80px;
-    background-color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    box-shadow: 5px 0 10px gray ;
 }
-#logo img{
+.logo {
+    color: gray;
+    font-size: 30px;
+    padding: 0 80px;
+    font-weight: bold;
+    margin-left: -220px;
+}
+
+.menu img{
     float: left;
-    width: 65px;
+    width: 240px;
     text-align: center;
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
-    margin: left;
     cursor: pointer;
     transition: all 500ms;
 }   
-#logo img:hover{
+.menu img:hover{
     transform: scale(1.1, 1.1);}
 
-#logo h3{
-    float: left;
-    width: 310px;
-    background-color: transparent;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    color:rgb(78, 78, 78);
-    margin-left: 8px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-/*menú*/
-#menu{
+.menu_items{
     display: flex;
-    height: 70px;
-    background: transparent;
+    list-style: none;
+    margin-right: 30px;
 }
-#menu ul li{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 21px;
-    display: inline-block;
-    margin: 10px;
-    letter-spacing: 1px;
-    line-height: 70px;
+.menu_items li{
+    border-radius: 3px;
+    margin: 0 5px;
 }
-#menu ul li a{
-    display: flex;
+.menu_items li a{
+    padding: 7px 13px;
     text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
     color: gray;
-    transition: all 200ms;
 }
-#menu ul li a:hover{
-    color: rgb(151, 14, 14);
+.menu_items li:hover, li.active {
+    background-color: rgb(184, 184, 184);
+    transition: 1s;
+}
+.btn_menu {
+    margin-right: 30px;
+    font-size: 25px;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    display: none;
+}
+ul.show {
+    top: 86px;
+}
+/*responsive solo del menu*/
+/*@media screen and (max-width:1330px) {
+    .logo{
+        font-size: 30px;
+        margin-left: -110px;
     }
+    .menu_items li a {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:1140px) {
+    .logo{
+        font-size: 30px;
+        margin-left: -110px;
+    }
+    .menu_items li a {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:952px) {
+    .logo{
+        font-size: 30px;
+        margin-left: 220px;
+    }
+    .menu {
+        width: 100%;
+        height: 90px;
+    }
+    .menu_items li a {
+        font-size: 16px;
+    }
+}
+*/
+@media screen and (max-width:1010px) {
+    .menu {
+        width: 100vw;
+        height: 90px;
+    }
+    .logo{
+        margin-left: -840px;
+    }
+    .btn_menu{
+        
+        display: inline-flex;
+    }
+    .menu_items {
+        max-height: 300px;
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 90px);
+        background: rgb(36, 36, 36) !important;
+        top: -100vw;
+        text-align: center;
+        transition: all 1s;
+        flex-direction: column !important;
+    }
+    .menu_items li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+    .menu_items li:hover{
+        background: none;
+    }
+    .menu_items li a{
+        font-size: 20px;
+        color: gray;
+        font-weight: bold;
+    }
+    .menu_items li a:hover{
+        color: rgb(255, 255, 255);
+    }
+    .logo{
+        font-size: 25px;
+        padding-left: 35px;
+    }
+}
+@media screen and (max-width:850px) {
 
+    .menu_items li{
+        margin: 5px 0 0 0;
+    }
+    .menu_items{
+        height: calc(100% - 90px);
+    }
+}
+@media screen and (max-width:650px) {
+    .logo{
+        font-size: 30px;
+        margin-left: 2200px;
+    }
+    .menu_items li a {
+        font-size: 16px;
+    }
+}
+/*fin responsive solo del menu*/
+/*fin nav del menu*/
 /*VIDEO del HOME*/
 #videoPrincipal video{
     width: 100%;
+    margin-bottom: -2px;
 }
 /*fin del VIDEO de HOME*/
 
@@ -88,8 +184,6 @@ br{
 #footer{
     height: 200px;
     width: 100%;
-    margin-top: -5px;
-    background-color: rgb(20, 20, 20); 
     display: inline-block;
 }
 #footer #redesSociales{
@@ -132,10 +226,10 @@ br{
 
 #whatsapp img{
         float: left;
-        width: 95px;
-        height: 65px;
+        width: 85px;
+        height: 75px;
         text-align: center;
-        margin-top: 5px;
+        margin-top: 0px;
         margin-left: 0px;
         margin-right: 10px;
         margin: left;
@@ -163,7 +257,6 @@ br{
 #footerPrincipal{
     width: 100%;
     height: 40px;
-    margin: 0px auto;
     text-align: center;
     background-color: rgb(17, 17, 17);
     color: rgb(189, 189, 189);
@@ -184,13 +277,12 @@ br{
 table{
     cursor: pointer;
     flex-wrap: wrap;
-    width: 1200px;
+    width: 768px;
     border: 1px solid #a1a1a1;
     box-shadow: 1px 2px 0px 2px gray;
-    height: 505px;
+    height: 100%;
     font-family:'bebas neue ', cursive;
-    padding: 0px;
-    margin-left: 70px;
+    margin: 0px auto;
 }
 table tr td a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -245,6 +337,28 @@ table tr td ul li{
 
 
 /*seccion-INSUMOS INFORMATICOS*/
+.container{
+    float: none;
+    clear: both;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    background-color: transparent;
+
+}
+.parrafoPublicitario{
+    /*background-image: url(img/banner-amarillo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;*/
+    background-color: rgb(255, 187, 0);
+    border-radius: 50px;
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+    height: 296px;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+}
+
 #insumos{
     display:flex;
     flex-wrap: wrap;
@@ -656,74 +770,14 @@ table tr td ul li{
         width:1024px;
         margin: 0px auto;
     }
-    #header{
-        align-items: stretch;
-        width: 100%;
-        height: 60px;
-        background-color: white;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: gray;
-    }
-
-    #logo img{
-        float: left;
-        width: 50px;
-        text-align: center;
-        margin-top: 1px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin: left;
-        cursor: pointer;
-    }
-    
-    #logo h3{
-        float: left;
-        width: 170px;
-        background-color: transparent;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 25px;
-        margin-left: -3px;
-        color:rgb(78, 78, 78);
-        letter-spacing: 1px;
-        margin-top: -2px;
-    }
-
-    #menu{
-        display: grid;
-        background: transparent;
-        margin-left: 80px;
-    }
-    
-    #menu ul li{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 20px;
-        display: inline-block;
-        margin: 6px;
-        letter-spacing: 1px;
-        line-height: 70px;
-    }
-    
-    #menu ul li a{
-        display: block;
-        text-decoration: none;
-        cursor: pointer;
-        color: gray;
-        transition: all 200ms;
-    }
-    #menu ul li a:hover{
-        color: rgb(151, 14, 14);
-    } 
-
     #videoPrincipal video{
         width: 100%;
     }
-
     #footer{
         height: 100% auto;
       /*  height: 260px;*/
         width: 100%;
         margin-bottom: 30px;
-        background-color:rgb(34, 34, 34); 
         display: inline-block;
     }
     
@@ -878,11 +932,10 @@ table tr td ul li{
         background-size: 100%;
     }
     table{
-        margin-left: 0px;
         cursor: pointer;
         display: grid;
         display: inline-flexbox;
-        width: 100%;
+        width: 768px;
         border: 1px solid #a1a1a1;
         box-shadow: 1px 2px 0px 2px gray;
         height: 100%;
@@ -892,7 +945,7 @@ table tr td ul li{
         cursor: pointer;
         color: rgb(216, 98, 98);
         text-align: center;
-        font-size: 35px;
+        font-size: 25px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         letter-spacing: 1px;
         transition: all 200ms;
@@ -938,84 +991,85 @@ table tr td ul li{
          list-style:circle;
      }
     /*fin-SERVICIOS*/
+      /*inicio-CONTACTO*/
+.formulario{
+    cursor: pointer;
+    color: white;
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 668px;
+    height: 420px;
+    margin: 0px auto;
+    border: 2px solid rgb(128, 124, 124);
+    background-image: linear-gradient(to left, rgb(179, 2, 2), rgb(77, 58, 146));   
+}
+.formulario p{
+    margin-top: -45px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.formulario input{
+    display: inline-block;
+    height: 20px;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formulario .nombreFormulario{
+    font-size: 20px;
+    margin-left: 8px;
+    padding: 5px;
+}
+.formulario .apellidoFormulario{
+    font-size: 20px;
+    padding: 5px;
+}
+.formulario .meilFormulario{
+    font-size: 20px;
+    margin-left: 18px;
+    padding: 5px;
+}
+
+.formulario #estadoCivil{
+    width: 80px;
+    height: 40px;
+    font-size: 15px ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.formulario .chekbox{
+    position: absolute;
+    top:60px;
+    left:680px;
+    width: 40px;
+    height: 40px;
+}
+
+.formulario #textarea{
+    font-size: 20px;
+    padding: 5px;
+    height: 80px;
+    width: 585px;
+}
+/*fin-CONTACTO*/
 }
 @media (max-width:768px){
-    #header{
-        align-items: stretch;
-        width: 100%;
-        height: 50px;
-        background-color: white;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: gray;
-    }
-
-    #logo img{
-        float: left;
-        width: 30px;
-        text-align: center;
-        margin-top: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin: left;
-        cursor: pointer;
-    }
-    
-    #logo h3{
-        float: left;
-        width: 130px;
-        background-color: transparent;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 20px;
-        color:rgb(78, 78, 78);
-        margin-top: -1px;
-        margin-left: 2px;
-        letter-spacing: 1px;
-    }
-
-    #menu{
-        display: grid;
-        height: 10px;
-        background: transparent;
-        margin-left: 80px;
-    }
-    
-    #menu ul li{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 15px;
-        display: inline-block;
-        margin: 0px 2px 0px 2px;
-        letter-spacing: 1px;
-        line-height: 70px;
-    }
-    
-    #menu ul li a{
-        display: block;
-        text-decoration: none;
-        cursor: pointer;
-        color: gray;
-        transition: all 200ms;
-    }
-    #menu ul li a:hover{
-        color: rgb(151, 14, 14);
-    } 
-
     .wrap{
         width:768px;
         margin: 0px auto;
     }
-
     #videoPrincipal video{
         width: 100%;
     }
-
     #footer{
         height: 298px;
         width: 100%;
-        margin-top: -5px;
-        background-color: black; 
         display: inline-block;
+        margin-bottom: -70px;
     }
-    
     #footer #redesSociales{
         cursor: pointer;
         height: 40px;
@@ -1160,31 +1214,29 @@ table tr td ul li{
         bottom: 0;
         position: fixed;
     }
-
-    /*seccion SERVICIOS*/
+    /*inicio-SERVICIOS*/
     #fondoServicios{
         background-image: url(img/fondoServicios2.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
     }
     table{
-        margin-left: 0px;
+        margin-left: 0px auto;
         cursor: pointer;
         display: grid;
         display: inline-flexbox;
-        width: 768px;
+        width: 500px;
         border: 1px solid #a1a1a1;
         box-shadow: 1px 2px 0px 2px gray;
-        height: 600px;
         font-family:'bebas neue ', cursive;
+        height: 100%;
     }
     table tr td h3{
         cursor: pointer;
         color: rgb(216, 98, 98);
         text-align: center;
-        font-size: 19px;
+        font-size: 10px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        letter-spacing: 1px;
         transition: all 200ms;
     }
     table tr td h3:hover{
@@ -1192,7 +1244,7 @@ table tr td ul li{
     }
     
     table tr td ul{
-        font-size: 19px;
+        font-size: 14px;
         margin-top: 1px;
         text-align: left;
         margin-left: 23px;
@@ -1214,7 +1266,7 @@ table tr td ul li{
     table tr td{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight:900;
-        font-size: 19px;
+        font-size: 14px;
         color: rgb(173, 57, 57);
         text-align: center;
     }
@@ -1226,147 +1278,78 @@ table tr td ul li{
          list-style:circle;
      }
     /*fin-SERVICIOS*/
-    /*inicio-CONTACTO*/
+    /*fin-SERVICIOS*/
+/*inicio-CONTACTO*/
 .formulario{
     cursor: pointer;
     color: white;
-    font-size: 19px;
+    font-size: 14px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 668px;
+    width: 400px;
     height: 420px;
     margin: 0px auto;
     border: 2px solid rgb(128, 124, 124);
     background-image: linear-gradient(to left, rgb(179, 2, 2), rgb(77, 58, 146));   
-}
-.formulario p{
+    }
+    
+    .formulario p{
     margin-top: -45px;
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-}
-
-.formulario input{
+    }
+    
+    .formulario input{
     display: inline-block;
     height: 20px;
-    width: 500px;
+    width: 400px;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.formulario .nombreFormulario{
+    }
+    
+    .formulario .nombreFormulario{
     font-size: 20px;
-    margin-left: 8px;
+    margin-left: 5px;
     padding: 5px;
-}
-.formulario .apellidoFormulario{
+    }
+    .formulario .apellidoFormulario{
     font-size: 20px;
     padding: 5px;
-}
-.formulario .meilFormulario{
+    margin-left: 4px;
+    }
+    .formulario .meilFormulario{
     font-size: 20px;
-    margin-left: 18px;
+    margin-left: 5px;
     padding: 5px;
-}
-
-.formulario #estadoCivil{
+    }
+    
+    .formulario #estadoCivil{
     width: 80px;
+    margin-left: 5px;
     height: 40px;
     font-size: 15px ;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.formulario .chekbox{
-    position: absolute;
-    top:60px;
-    left:680px;
-    width: 40px;
-    height: 40px;
-}
-
-.formulario #textarea{
+    }
+    
+    .formulario #textarea{
+    margin-left: 5px;
     font-size: 20px;
     padding: 5px;
     height: 80px;
-    width: 585px;
-}
-/*fin-CONTACTO*/
+    width: 200px;
+    }
+    /*fin-CONTACTO*/
+
 }
 @media (max-width:600px){
-    #header{ 
-        display: flex;
-        display: inline-flexbox;
-        align-items: stretch;
-        width: 100%;
-        height: 40px;
-        background-color: white;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: gray;
-    }
-
-    #logo img{
-        /*float: left;*/
-        display: inline-flexbox;
-        width: 35px;
-        text-align: center;
-        margin-top: 2px;
-        margin: left;
-        cursor: pointer;
-        margin-left: 5px;
-    }
-    
-    #logo h3{
-        /*float: left;*/
-        display: inline-flexbox;
-        width: 0px;
-        background-color: transparent;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 12px;
-        color:rgb(78, 78, 78);
-        margin-top: 3px; 
-    }
-
-    #menu{
-        display: flex;
-        height: 20px;
-        background: transparent;
-        margin-left: 150px;
-    }
-    
-    #menu ul li{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 12px;
-        display: inline-block;
-        margin-top: -11px; 
-    }
-    
-    #menu ul li a{
-        display: inline-block;
-        text-decoration: none;
-        cursor: pointer;
-        color: gray;
-        transition: all 200ms;
-    }
-    #menu ul li a:hover{
-        color: rgb(151, 14, 14);
-    } 
-
-    .wrap{
-        width:600px;
-        margin: 0px auto;
-    }
-
     #videoPrincipal video{
         width: 100%;
     }
-
     #footer{
-        height: 390px;
-        width: 100%;
-        margin-top: -5px;
-        background-color: rgb(34, 34, 34); 
+        height: 200px;
+        width: 100%; 
         display: inline-block;
     }
-    
     #footer #redesSociales{
         cursor: pointer;
         height: 40px;
@@ -1516,23 +1499,22 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
 table{
-    margin-left: 0px;
+    margin-left: 0px auto;
     cursor: pointer;
     display: grid;
     display: inline-flexbox;
-    width: 600px;
+    width: 500px;
     border: 1px solid #a1a1a1;
     box-shadow: 1px 2px 0px 2px gray;
-    height: 600px;
     font-family:'bebas neue ', cursive;
+    height: 100%;
 }
 table tr td h3{
     cursor: pointer;
     color: rgb(216, 98, 98);
     text-align: center;
-    font-size: 15px;
+    font-size: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     transition: all 200ms;
 }
@@ -1581,7 +1563,7 @@ cursor: pointer;
 color: white;
 font-size: 14px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-width: 500px;
+width: 400px;
 height: 420px;
 margin: 0px auto;
 border: 2px solid rgb(128, 124, 124);
@@ -1605,39 +1587,34 @@ margin-bottom: 10px;
 
 .formulario .nombreFormulario{
 font-size: 20px;
-margin-left: 8px;
+margin-left: 5px;
 padding: 5px;
 }
 .formulario .apellidoFormulario{
 font-size: 20px;
 padding: 5px;
+margin-left: 4px;
 }
 .formulario .meilFormulario{
 font-size: 20px;
-margin-left: 15px;
+margin-left: 5px;
 padding: 5px;
 }
 
 .formulario #estadoCivil{
 width: 80px;
+margin-left: 5px;
 height: 40px;
 font-size: 15px ;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.formulario .chekbox{
-position: absolute;
-top:45px;
-left:550px;
-width: 35px;
-height: 35px;
-}
-
 .formulario #textarea{
+margin-left: 5px;
 font-size: 20px;
 padding: 5px;
 height: 80px;
-width: 500px;
+width: 200px;
 }
 /*fin-CONTACTO*/
     

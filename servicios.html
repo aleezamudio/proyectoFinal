@@ -8,6 +8,10 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="icon" type="image/x-icon" href="img/logo.png" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com">
+    <link href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/87af2a58ba.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
     <title>Servicios|LUMARtecnologias</title>
     <meta name="keywords" content="instalacion, reparacion, servicios, tecnologia, camaras,Pc, seguridad ">
     <meta name="description"
@@ -17,23 +21,20 @@
 <body>
     <div id="fondoServicios">
         <!--inicio del menu-->
-        <header id="header">
-            <div class="wrap">
-                <div id="logo">
-                    <img src="img/logo.png" alt="logo de la página en la parte del header" />
-                    <h3>LUMAR<br />tecnologías</h3>
-                </div>
-                <nav id="menu">
-                    <ul>
-                        <li> <a href="index.html">Home</a></li>
-                        <li> <a href="insumos.html"> Insumos informáticos</a></li>
-                        <li> <a href="electrodomesticos.html">Electrodomésticos</a></li>
-                        <li> <a href="servicios.html">Servicios</a></li>
-                        <li> <a href="contacto.html">Contacto</a> </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <nav class="menu">
+            <img src="img/logoMenu.png" alt="logo">
+            <!--label class="logo">LUMAR<br>tecnologías</label-->
+            <ul class="menu_items">
+                <li><a href="index.html">Home </a></li>
+                <li><a href="insumos.html">Insumos Informáticos</a></li>
+                <li><a href="electrodomesticos.html">Electrodomésticos</a></li>
+                <li class="active"><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <span class="btn_menu">
+                <i class="fas fa-bars"></i>
+            </span>
+        </nav>
         <!--fin del menu-->
         <div class="clearfix"></div>
         <table border="1">
